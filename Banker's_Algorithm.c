@@ -2,9 +2,9 @@
 * Course: CS33211 Operating Systems
 * Assignment: Banker's Algorithm for deadlock avoidance
 * Name: Carlton Canaday
-* Version: 1.1
-* Description: Make sure there is enough resourcse so that all 5 clients needs can be met.
-* Refrence URL: https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/
+* Version: 1.2
+* Description: Make sure there is enough resources so that all 5 clients needs can be met.
+* Reference URL: https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/
 */
 #include <stdio.h>
 int main()
@@ -31,7 +31,7 @@ int main()
 	int avail[3] = { 3, 3, 2 }; 			// This is the starting values of resources A = 3, B = 3, C = 2
 
 	int f[n], ans[n], ind = 0;			/* f is an array of the processes to show if they are in a safe state or not
-										 * ans holds the order of the proccesses that were used
+										 * ans holds the order of the processes that were used
 										 * ind holds the current location of the array for ans
 										*/
 	for (k = 0; k < n; k++) {
@@ -45,11 +45,11 @@ int main()
 	}
 	int y = 0;
 
-	for (k = 0; k < n; k++) {			// Go though all the processess
-		for (i = 0; i < n; i++) {		// Go though all the processess again
+	for (k = 0; k < n; k++) {			// Go though all the processes
+		for (i = 0; i < n; i++) {		// Go though all the processes again
 			if (f[i] == 0) {
 
-				int flag = 0;			// seting the flag as NOT in a safe state as defualt
+				int flag = 0;			// setting the flag as NOT in a safe state as default
 				for (j = 0; j < m; j++) {
 					if (need[i][j] > avail[j]){ // check if the need is greater than the available resources
 						flag = 1;				// if true set the flag as one and break out of the loop
@@ -60,14 +60,14 @@ int main()
 				if (flag == 0) {
 					ans[ind++] = i;				// Which process was used and setup for the next process number that will be used
 					for (y = 0; y < m; y++)		// Where it is on the availability array
-						avail[y] += alloc[i][y]; // Releaseing resorces back to Available for A, B, C 
+						avail[y] += alloc[i][y]; // Releasing resources back to Available for A, B, C 
 					f[i] = 1;					// Will skip the the rest of the processes and go to the next 
 				}
 			}
 		}
 	}
 
-	int flag = 1;	// Setting the flag to 1 as defult it IS in a safe state
+	int flag = 1;	// Setting the flag to 1 as default it IS in a safe state
 	
 	for(int i = 0; i < n; i++){
 		if(f[i] != 1) // States if the system is NOT in a safe state
@@ -90,5 +90,5 @@ int main()
 
 	return (0); // Close the program
 
-	// This code is contributed by Deep Baldha (CandyZack). I slighly modified the code to make it eaiser for myself to read.
+	// This code is contributed by Deep Baldha (CandyZack). I slightly modified the code to make it easier for myself to read.
 }

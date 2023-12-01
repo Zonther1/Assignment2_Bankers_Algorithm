@@ -9,15 +9,15 @@
 <details>
   <summary>How to run the program</summary>
   <ol>
-    <li>Download the "Banker's_Algorithm.c".</li>
+    <li>Download the "Bankers_Algorithm.c".</li>
     <li>In terminal, set your directory to the location of "Banker's_Algorithm.c".</li>
     <li>Use gcc to complie the source code.</li>
       <ul>
-        <li><code>$ gcc Banker's_Algorithm.c -o Banker's_Algorithm</code></li>
+        <li><code>$ gcc Bankers_Algorithm.c -o Bankers_Algorithm</code></li>
       </ul>
     <li>Run the programs by entering the following command.</li>
     <ul>
-      <li><code>$ ./Banker's_Algorithm</code></li>
+      <li><code>$ ./Bankers_Algorithm</code></li>
     </ul>
   </ol>
 </details>

@@ -10,7 +10,7 @@
   <summary>How to run the program</summary>
   <ol>
     <li>Download the "Bankers_Algorithm.c".</li>
-    <li>In terminal, set your directory to the location of "Banker's_Algorithm.c".</li>
+    <li>In terminal, set your directory to the location of "Bankers_Algorithm.c".</li>
     <li>Use gcc to complie the source code.</li>
       <ul>
         <li><code>$ gcc Bankers_Algorithm.c -o Bankers_Algorithm</code></li>

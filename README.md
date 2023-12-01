@@ -25,5 +25,5 @@
   <summary>What did I learn?</summary>
   <p>Once I saw how the program was working from the example from geeksforgeeks.org, it made a lot more sense to me.</p>
   <p>It helped me understand how to use flags to keep the system in a safe state and how to determain if the process was in a safe state or not.</p>
-  <p>If all the values of f[i] were 1, then the system is in a safe state. If any value in the array was 0 then it was not.</p>
+  <p>If all the values of <code>f[i]</code> were 1, then the system is in a safe state. If any value in the array was 0 then it was not.</p>
 </details>

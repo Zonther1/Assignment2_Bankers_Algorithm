@@ -15,7 +15,7 @@
       <ul>
         <li><code>$ gcc Bankers_Algorithm.c -o Bankers_Algorithm</code></li>
       </ul>
-    <li>Run the programs by entering the following command.</li>
+    <li>Run the program in terminal by entering the following command. If you closed the terminal or moved the object file, you must set or reset the directory to the location of the object file you just created.</li>
     <ul>
       <li><code>$ ./Bankers_Algorithm</code></li>
     </ul>

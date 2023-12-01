@@ -1,6 +1,6 @@
 /********************************************************************************************************
 * Course: CS33211 Operating Systems
-* Assignment: Banker's Algorithm
+* Assignment: Banker's Algorithm for deadlock avoidance
 * Name: Carlton Canaday
 * Version: 1.1
 * Description: Make sure there is enough resourcse so that all 5 clients needs can be met.

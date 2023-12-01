@@ -22,6 +22,15 @@
   </ol>
 </details>
 <details>
+  <summary>How does it work?</summary>
+  <p>The processes are borken up into three resources: A, B, C.</p>
+  <p>Each process has allocated resources and has a max resources to complete the process</p>
+  <p>Max "A" resource from max is subtracted from allocatced "A" resource to calculate the needed resource for A. This step is repeated for B and C</p>
+  <p>If needed "A" resource is less than available "A", then it repeats the step for resource B and C.</p>
+  <p>If all are true, the process will run and return the resources from the allocated to the available. Like allocatated A is 2 and available is A is 3, allocated A resource is updated to 5. Same process with B and C</p>
+  <p>It records which process was used so it can be skipped if it needs to go though the loop again. It also will keep track of which order the processes were executed</p>
+  <p>If all the processes were ran, the system is in a safe state. If not, the system is not in a safe state.</p>
+<details>
   <summary>What did I learn?</summary>
   <p>Once I saw how the program was working from the example from geeksforgeeks.org, it made a lot more sense to me.</p>
   <p>It helped me understand how to use flags to keep the system in a safe state and how to determain if the process was in a safe state or not.</p>

@@ -84,7 +84,7 @@ int main()
 			printf(" P%d ->", ans[i]); // Printing off the order the processes that were completed
 		}
 	printf(" P%d\n", ans[n - 1]);		// Print off the final process
-	printf(" A = %d, B = %d, C = %d\n", avail[0], avail[1], avail[2]); // Print off the available resources of A B and C
+	printf(" A = %d, B = %d, C = %d\n", avail[0], avail[1], avail[2]); // Print off the available resources of A, B, and C
 	}
 	
 

@@ -3,7 +3,7 @@
 * Assignment: Banker's Algorithm for deadlock avoidance
 * Name: Carlton Canaday
 * Version: 1.2
-* Description: Make sure there is enough resources so that all 5 clients needs can be met.
+* Description: Make sure there is enough resources so that all 5 clients' needs can be met.
 * Reference URL: https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/
 */
 #include <stdio.h>
@@ -45,8 +45,8 @@ int main()
 	}
 	int y = 0;
 
-	for (k = 0; k < n; k++) {			// Go though all the processes
-		for (i = 0; i < n; i++) {		// Go though all the processes again
+	for (k = 0; k < n; k++) {			// Go through all the processes
+		for (i = 0; i < n; i++) {		// Go through all the processes again
 			if (f[i] == 0) {
 
 				int flag = 0;			// setting the flag as NOT in a safe state as default

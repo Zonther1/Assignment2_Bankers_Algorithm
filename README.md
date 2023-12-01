@@ -27,7 +27,7 @@
   <p>Each process has allocated resources and has a max resources to complete the process.</p>
   <p>Max "A" resource is subtracted from allocatced "A" resource to calculate the needed resource for A. This step is repeated for B and C.</p>
   <p>If needed "A" resource is less than available "A", then it repeats the step for B and C. If not, it moves on to the next process.</p>
-  <p>If all are true, the process will run and return the resources from the allocated to the available. For example, allocatated A is 2 and available A is 3, available A resource is updated to 5 because it doesn't need to run that process anymore.</p>
+  <p>If all are true, the process will run and return the resources from the allocated to the available. For example, allocatated A is 2 and available A is 3, available A resource is updated to 5 because it is returning the allocated resources back to the available.</p>
   <p>It records which process was used so it can be skipped if it needs to go though the loop again. It also will keep track of which order the processes were executed.</p>
   <p>If all the processes were completed, the system is in a safe state. If not, the system is not in a safe state.</p>
 </details>
